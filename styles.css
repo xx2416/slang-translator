@@ -1,5 +1,6 @@
 body{font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#f5f7fb;margin:0;color:#111}
-.app{max-width:760px;margin:24px auto;padding:0 14px}
+.layout{max-width:1080px;margin:20px auto;padding:0 14px;display:grid;grid-template-columns:280px 1fr;gap:12px}
+.main{min-width:0}
 h1{margin:0 0 4px}.sub{color:#666;margin:0 0 14px}
 h3,h4{margin:8px 0}
 .card{background:#fff;border:1px solid #e6e8ef;border-radius:12px;padding:14px;margin-bottom:12px}
@@ -8,8 +9,15 @@ textarea,select{width:100%;padding:10px;border:1px solid #d8dce7;border-radius:1
 textarea{min-height:110px}
 .row{display:flex;gap:8px;margin-top:10px;align-items:center}
 .row.between{justify-content:space-between}
+.row.no-margin{margin-top:0}
 button{padding:10px 14px;border-radius:10px;border:1px solid #111;background:#111;color:#fff;font:inherit;cursor:pointer}
 button.ghost{background:#fff;color:#111;border-color:#d8dce7}
 .output{font-size:22px;font-weight:700;line-height:1.4;padding:8px 0}
 .muted{color:#666}
 li{margin:6px 0}
+.sidebar{position:sticky;top:12px;height:calc(100vh - 36px);overflow:auto}
+.history-item{border:1px solid #eceff5;border-radius:10px;padding:8px;margin:8px 0;cursor:pointer}
+.history-item .time{font-size:12px;color:#777}
+.history-item .line{font-size:13px;color:#333;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.history-empty{color:#777;font-size:14px;margin-top:8px}
+@media (max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static;height:auto}}

@@ -9,48 +9,58 @@
   <meta name="theme-color" content="#111111" />
 </head>
 <body>
-  <main class="app">
-    <h1>Mandarin → US Slang</h1>
-    <p class="sub">Type or speak Chinese, get natural US-style lines with context.</p>
-
-    <section class="card">
-      <label>Context</label>
-      <select id="context">
-        <option value="casual">Casual friends</option>
-        <option value="hype">Hype / party vibe</option>
-        <option value="gaming">Gaming / online</option>
-        <option value="dating">Dating / flirty</option>
-        <option value="work">Work-friendly casual</option>
-      </select>
-
-      <label>Tone</label>
-      <select id="tone">
-        <option value="neutral">Balanced</option>
-        <option value="polite">More polite</option>
-        <option value="savage">Savage</option>
-      </select>
-
-      <label>Your Mandarin</label>
-      <textarea id="input" placeholder="比如：我今天忙疯了，但是晚上想出去玩"></textarea>
-
-      <div class="row">
-        <button id="voice" class="ghost">🎙️ 语音输入</button>
-        <button id="translate">Translate</button>
+  <main class="layout">
+    <aside class="sidebar card">
+      <div class="row between no-margin">
+        <h3>Convo History</h3>
+        <button id="newChat" class="ghost">+ New</button>
       </div>
-    </section>
+      <div id="history" class="history"></div>
+    </aside>
 
-    <section class="card">
-      <div class="row between">
-        <h3>US Slang Output</h3>
-        <button id="copy" class="ghost">Copy</button>
-      </div>
-      <div id="output" class="output">—</div>
+    <section class="main">
+      <h1>Mandarin → US Slang</h1>
+      <p class="sub">Type or speak Chinese, get natural US-style lines with context.</p>
 
-      <h4>Alt versions</h4>
-      <ul id="alts"></ul>
+      <section class="card">
+        <label>Context</label>
+        <select id="context">
+          <option value="casual">Casual friends</option>
+          <option value="hype">Hype / party vibe</option>
+          <option value="gaming">Gaming / online</option>
+          <option value="dating">Dating / flirty</option>
+          <option value="work">Work-friendly casual</option>
+        </select>
 
-      <h4>Literal meaning</h4>
-      <div id="literal" class="muted">—</div>
+        <label>Tone</label>
+        <select id="tone">
+          <option value="neutral">Balanced</option>
+          <option value="polite">More polite</option>
+          <option value="savage">Savage</option>
+        </select>
+
+        <label>Your Mandarin</label>
+        <textarea id="input" placeholder="比如：我今天忙疯了，但是晚上想出去玩"></textarea>
+
+        <div class="row">
+          <button id="voice" class="ghost">🎙️ 语音输入</button>
+          <button id="translate">Translate</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="row between">
+          <h3>US Slang Output</h3>
+          <button id="copy" class="ghost">Copy</button>
+        </div>
+        <div id="output" class="output">—</div>
+
+        <h4>Alt versions</h4>
+        <ul id="alts"></ul>
+
+        <h4>Literal meaning</h4>
+        <div id="literal" class="muted">—</div>
+      </section>
     </section>
   </main>
 
