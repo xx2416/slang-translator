@@ -1,0 +1,10 @@
+{
+  "name": "Mandarin to US Slang",
+  "short_name": "US Slang",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#111111",
+  "icons": []
+}
