@@ -23,6 +23,13 @@
         <option value="work">Work-friendly casual</option>
       </select>
 
+      <label>Tone</label>
+      <select id="tone">
+        <option value="neutral">Balanced</option>
+        <option value="polite">More polite</option>
+        <option value="savage">Savage</option>
+      </select>
+
       <label>Your Mandarin</label>
       <textarea id="input" placeholder="比如：我今天忙疯了，但是晚上想出去玩"></textarea>
 
@@ -33,7 +40,10 @@
     </section>
 
     <section class="card">
-      <h3>US Slang Output</h3>
+      <div class="row between">
+        <h3>US Slang Output</h3>
+        <button id="copy" class="ghost">Copy</button>
+      </div>
       <div id="output" class="output">—</div>
 
       <h4>Alt versions</h4>
